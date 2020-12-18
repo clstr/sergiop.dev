@@ -3,9 +3,13 @@ import React, { Component } from 'react'
 export class Layout extends Component {
   render() {
     return (
-      <>
-        {this.props.children}
-      </>
+      <div id="nescss">
+        <div className="container">
+          <main className="main-content">
+            {this.props.children}
+          </main>
+        </div>
+      </div>
     )
   }
 }
